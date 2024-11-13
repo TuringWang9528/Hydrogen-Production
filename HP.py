@@ -39,7 +39,7 @@ if st.button("Predict"):
     st.write(f"**Predicted hydrogen production:** {predicted_proba}")
     
     # Calculate SHAP values and display force plot
-    explainer = shap.TreeExplainer(model)
+    explainer = shap.KernelExplainer(model)
     shap_values = explainer.shap_values(pd.DataFrame([feature_values], columns=feature_names))
 
     shap.force_plot(explainer.expected_value, shap_values[0], pd.DataFrame([feature_values], columns=feature_names), matplotlib=True)
