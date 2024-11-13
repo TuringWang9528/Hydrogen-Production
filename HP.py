@@ -7,6 +7,10 @@ import shap
 # 加载模型
 model = joblib.load('CatBoost.pkl')
 
+# Define feature names
+feature_names = ['Catalyst Loading Rate(%)', 'Reaction \nTime(min)', 'Temperature(K)',
+       'Catalyst Dosage(g)', 'NaBH4(mol/L)', 'NaOH(mol/L)']
+
 # Streamlit的用户界面
 st.title("Sodium borohydride hydrogen production prediction platform")
 
