@@ -8,7 +8,7 @@ import shap
 model = joblib.load('CatBoost.pkl')
 
 # Define feature names
-feature_names = ['Catalyst Loading Rate(%)', 'Reaction \nTime(min)', 'Temperature(K)',
+feature_names = ['Catalyst Loading Rate(%)', 'Reaction Time(min)', 'Temperature(K)',
        'Catalyst Dosage(g)', 'NaBH4(mol/L)', 'NaOH(mol/L)']
 
 # Streamlit的用户界面
