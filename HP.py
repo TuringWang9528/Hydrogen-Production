@@ -6,7 +6,7 @@ import shap
 import matplotlib.pyplot as plt
 
 # 加载模型
-model = joblib.load('CatBoost.pkl')
+model = joblib.load('Model.pkl')
 
 # Define feature names
 feature_names = ['Catalyst Loading Rate(%)', 'Reaction Time(min)', 'Temperature(K)',
