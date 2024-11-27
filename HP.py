@@ -42,7 +42,7 @@ if st.button("Predict"):
     predicted_proba = model.predict(features)
 
     # 显示预测结果
-    st.write(f"**Predicted hydrogen production:** {predicted_proba}")
+    st.write(f"**Predicted hydrogen production:** {predicted_proba} mL")
     
     # Calculate SHAP values and display force plot
     explainer = shap.TreeExplainer(model)
